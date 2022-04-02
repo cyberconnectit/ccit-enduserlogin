@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login</title>
+	<title>Cyber Connect IT Members Area</title>
 	<link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
 <body>
@@ -17,10 +17,10 @@
  <form name="login" onsubmit="return validateForm() ;" method="post">
 
  <ul>
- <li>Username: <input class="username" type="text" name="username">
+ <li><b>Username:</b> &nbsp;&nbsp;<input class="username" type="text" name="username">
  </li>
 
- <li>Password: <input class="password" type="password" name="password">
+ <li><b>Password:</b> &nbsp;&nbsp;<input class="password" type="password" name="password">
  </li>
  </ul>
 
@@ -37,8 +37,8 @@ function validate()
 	var un = document.login.username.value;
 	var pw = document.login.password.value;
 	var valid = false;
-	var usernameArray = ["Admin", "GlobalAdmin", "James"];
-	var passwordArray = ["Admin123", "GlobalAdmin123", "James123"];
+	var usernameArray = ["Admin", "GlobalAdmin"];
+	var passwordArray = ["Admin123", "GlobalAdmin123"];
 	for (var i = 0; i < usernameArray.length; i++)
  {
 
@@ -50,7 +50,6 @@ function validate()
 }
 	if (valid)
 	{
-		alert("Login was successful");
 		window.location = "https://cyberconnectit.github.io/ticket-system.cyberconnectit.com/";
 		return false;
 	}
